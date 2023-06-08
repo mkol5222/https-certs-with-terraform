@@ -22,6 +22,8 @@ resource "acme_certificate" "certificate" {
     provider = "cloudflare"
     config = {
       CLOUDFLARE_DNS_API_TOKEN = var.cloudflare_api_token
+      CLOUDFLARE_TTL = 240
+      CLOUDFLARE_PROPAGATION_TIMEOUT = 360
     }
   }
 }
