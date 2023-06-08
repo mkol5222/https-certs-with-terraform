@@ -33,6 +33,7 @@ api,192.168.1.99
 - run `terraform init`
 - run `terraform plan` to review what will be done
 - run `terraform apply`
-- save certificates from terraform to disk in Powershell using `./scripts/save-certs.ps1`
+- certificates are now saved by Terraform to `./certs`
+- optional: save certificates from terraform to disk in Powershell using `./scripts/save-certs.ps1`
 - at the end you can run `terraform destroy` to remove the certificates and host A records, if needed
 - you can inspect certificate with `openssl x509 -in <cert> -text -noout` - e.g.  `openssl x509 -in ./certificates/test-web.pem -text -noout`
