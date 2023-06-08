@@ -16,6 +16,5 @@ provider "cloudflare" {
 }
 
 provider "acme" {
-  server_url = "https://acme-staging-v02.api.letsencrypt.org/directory"
-  #server_url = "https://acme-v02.api.letsencrypt.org/directory"
+  server_url = var.acme_staging ? "https://acme-staging-v02.api.letsencrypt.org/directory" : "https://acme-v02.api.letsencrypt.org/directory"
 }

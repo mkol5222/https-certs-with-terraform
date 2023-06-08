@@ -16,3 +16,8 @@ variable "acme_email" {
   description = "value of ACME email"
 }
  
+ variable "acme_staging" {
+  type        = bool
+  description = "generate certificates in Let's Encrypt staging environment instead of production"
+}
+ 

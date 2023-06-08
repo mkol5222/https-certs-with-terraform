@@ -1,3 +1,6 @@
+# output folder
+certificates/*
+
 # Local .terraform directories
 **/.terraform/*
 
